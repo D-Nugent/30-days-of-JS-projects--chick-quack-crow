@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chick-Quack-Crow</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <h1 class="primary-title">Chick🐤-Quack🦆-Crow🐦</h1>
+  </header>
+  <main>
+    <section class="game-wrapper">
+      <article class="game-rules">
+        <h2 class="secondary-title">Rules of the Game</h2>
+        <p class="game-rules__msg">
+          Welcome to Chick-Quack-Crow(🐤🦆🐦), a new version of TicTacToe.
+        </p>
+        <p class="game-rules__msg">
+          In the game, you will take turns against the computer to try and get your three chicks in a row - either 
+          horizontally, vertically or diagonally! Try to play strategically by blocking your oponent from getting 
+          their three ducks in a row.
+        </p>
+        <p class="game-rules__msg">
+          Have fun battling for chick supremacy! Good luck!
+        </p>
+        <button class="game-rules__start">
+          Let's play!
+        </button>
+      </article>
+      <p class="turn-status">Let's go!</p>
+      <section class="game">
+        <article class="game__grid">
+          <div class="game__square --left --top" data-value=""></div>
+          <div class="game__square --center --top" data-value=""></div>
+          <div class="game__square --right --top" data-value=""></div>
+          <div class="game__square --left --middle" data-value=""></div>
+          <div class="game__square --center --middle" data-value=""></div>
+          <div class="game__square --right --middle" data-value=""></div>
+          <div class="game__square --left --bottom" data-value=""></div>
+          <div class="game__square --center --bottom" data-value=""></div>
+          <div class="game__square --right --bottom" data-value=""></div>
+        </article>
+      </section>
+      <article class="game-modal">
+        <h3 class="tertiary-title">Deciding First Player...</h3>
+        <div class="coin">
+          <div class="coin__front">🐤</div>
+          <div class="coin__back">🦆</div>
+        </div>
+      </article>
+    </section>
+  </main>
+  <audio src="./assets/audio/chick.mp3" data-type="chick"></audio>
+  <audio src="./assets/audio/duck.mp3" data-type="duck"></audio>
+  <audio src="./assets/audio/sound-effect-applause.mp3" data-type="applause"></audio>
+  <audio src="./assets/audio/sound-effect-try-again.mp3" data-type="tryAgain"></audio>
+  <script src="./script.js"></script>
+</body>
+</html>
